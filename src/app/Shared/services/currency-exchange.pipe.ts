@@ -18,7 +18,7 @@ export class CurrencyExchangePipe implements PipeTransform {
   };
 
   transform(value: number, currency: string): string {
-    return (value * this.rates[currency]).toFixed(2) +' ' + this.currencies[currency];
+    return (value * this.rates[currency]).toFixed(0) +' ' + this.currencies[currency];
   }
 
 }
