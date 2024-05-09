@@ -1,0 +1,52 @@
+<mat-form-field>
+  <mat-label>Pénznem</mat-label>
+  <mat-select [(value)]="selectedCurrency">
+    <mat-option value="USD">USD</mat-option>
+    <mat-option value="EUR">EUR</mat-option>
+    <mat-option value="HUF">HUF</mat-option>
+  </mat-select>
+</mat-form-field>
+<div class="text">Karperecek</div>
+<div class="picture-grid">
+    <mat-card *ngFor="let bracelet of bracelets">
+      <mat-card-header>
+        <mat-card-title>{{ bracelet.name }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="bracelet.imageUrl" alt="{{ bracelet.name }}">
+      <p>Ár: {{ bracelet.price | currencyExchange:selectedCurrency }} </p>
+      <button class="button" (click)="addToCart(bracelet, 'bracelets')">Kosárba</button>
+    </mat-card>
+  </div>
+  <div class="text">Fülbevalók</div>
+  <div class="picture-grid">
+    <mat-card *ngFor="let earring of earrings">
+      <mat-card-header>
+        <mat-card-title>{{ earring.name }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="earring.imageUrl" alt="{{ earring.name }}">
+      <p>Ár: {{ earring.price | currencyExchange:selectedCurrency }} </p>
+      <button class="button" (click)="addToCart(earring, 'earrings')">Kosárba</button>
+    </mat-card>
+  </div>
+  <div class="text">Nyakláncok</div>
+  <div class="picture-grid">
+    <mat-card *ngFor="let necklace of necklaces">
+      <mat-card-header>
+        <mat-card-title>{{ necklace.name }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="necklace.imageUrl" alt="{{ necklace.name }}">
+      <p>Ár: {{ necklace.price | currencyExchange:selectedCurrency }} </p>
+      <button class="button" (click)="addToCart(necklace, 'necklaces')">Kosárba</button>
+    </mat-card>
+  </div>
+  <div class="text">Gyűrűk</div>
+  <div class="picture-grid">
+    <mat-card *ngFor="let ring of rings">
+      <mat-card-header>
+        <mat-card-title>{{ ring.name }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="ring.imageUrl" alt="{{ ring.name }}">
+      <p>Ár: {{ ring.price | currencyExchange:selectedCurrency }} </p>
+      <button class="button" (click)="addToCart(ring, 'rings')">Kosárba</button>
+    </mat-card>
+  </div>

@@ -1,0 +1,31 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.login-card{
+    width: 400px;
+    padding: 20px;
+}
+
+.login-field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.custom-button {
+    background-color: #ff4081;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+  }

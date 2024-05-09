@@ -1,0 +1,21 @@
+mat-card {
+    max-width: 400px;
+    margin: 2em auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  mat-form-field {
+    width: 100%;
+  }
+  button {
+    margin-top: 20px;
+  }
+
+  .custom-button {
+    background-color: #ff4081;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+  }

@@ -1,0 +1,72 @@
+.cart {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .cart-item h3 {
+    margin: 0;
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+  
+  .cart-item p {
+    margin: 0;
+    padding-right: 10px;
+  }
+
+  .small-button {
+    background-color: #f1f1f1;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .big-button {
+    background-color: #f1f1f1;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 15%;
+    font-family: 'Courier New', Courier, monospace;
+  }
+   .text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    width: 15%;
+   }
+
+   .custom-button{
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: plum;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+   }

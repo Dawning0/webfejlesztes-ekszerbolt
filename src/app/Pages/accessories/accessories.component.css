@@ -1,0 +1,38 @@
+.picture-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  mat-card {
+    width: 300px;
+  }
+
+  .text{
+    text-align: center;
+    margin: 20px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+  }
+
+.button{
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background-color: plum;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+}
+p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+mat-form-field{
+  margin: 10px;
+}
+

@@ -1,0 +1,23 @@
+<div class="cart">
+    <h2>A kosaram</h2>
+    <div *ngIf="this.cartService.getCart().length == 0">
+      <h2>A kosarad üres</h2>
+    </div>
+    <div *ngFor="let product of cartService.getCart()">
+      <div class="cart-item">
+        <h3>{{product.name}}</h3>
+        <img [src]="product.imageUrl" alt="{{product.name}}">
+        <p class="text">Mennyiség: {{product.amount}}</p>
+        <p class="text">Ár: {{product.price}} HUF</p> 
+      <p class="text">Összérték: {{product.price * (product.amount ?? 0)}} HUF</p> 
+        <button class="small-button" (click)="cartService.decreaseProduct(product)">-</button>
+        <button class="small-button" (click)="cartService.increaseProduct(product)">+</button>
+        <button class="big-button" (click)="cartService.removeProduct(product)">Eltávolítás</button>
+      </div>
+    </div>
+    <div class="total-price" *ngIf="cartService.getCart().length > 0">
+      <h2>Végösszeg: {{cartService.getTotalPrice().value}} {{selectedCurrency}}</h2>
+      <button class="custom-button" (click)="payment()">Fizetés</button>
+  </div>
+  </div>
+  

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webfejlesztes-ekszerbolt": {
+      "hosting": {
+        "ekszerbolt": [
+          "webfejlesztes-ekszerbolt"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webfejlesztes-ekszerbolt"
+  }
+}

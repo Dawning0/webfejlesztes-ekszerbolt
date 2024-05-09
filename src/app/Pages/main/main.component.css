@@ -1,0 +1,16 @@
+.intro-section {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .intro-title {
+    font-size: 2.5em;
+    color: black;
+  }
+  
+  .intro-text {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
